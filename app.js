@@ -6,45 +6,45 @@ const maxOfTwoNumbers = (x, y) => {
     return y
   }
 }
-console.log("Exercise 1 Result:", maxOfTwoNumbers(3, 9))
+console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9))
 
 ///// Exercise 2
 const isAdult = (age) => {
   if (age >= 18) {
-    return "Adult"
+    return 'Adult'
   } else {
-    return "Minor"
+    return 'Minor'
   }
 }
-console.log("Exercise 2 Result:", isAdult(21))
+console.log('Exercise 2 Result:', isAdult(21))
 
 ///// Exercise 3
 const isCharAVowel = (char) => {
   if (
-    char === "a" ||
-    char === "e" ||
-    char === "u" ||
-    char === "i" ||
-    char === "o"
+    char === 'a' ||
+    char === 'e' ||
+    char === 'u' ||
+    char === 'i' ||
+    char === 'o'
   ) {
     return true
   } else {
     return false
   }
 }
-console.log("Exercise 3 Result:", isCharAVowel("p"))
+console.log('Exercise 3 Result:', isCharAVowel('a'))
 
 ///// Exercise 4
 const generateEmail = (aName, domain) => {
-  return aName + "@" + domain
+  return aName + '@' + domain
 }
-console.log("Exercise 4 Result:", generateEmail("johnsmith", "example.com"))
+console.log('Exercise 4 Result:', generateEmail('johnsmith', 'example.com'))
 
 ///// Exercise 5
 const greetUser = (theName, time) => {
-  return "Good " + time + ", " + theName + "!"
+  return 'Good ' + time + ', ' + theName + '!'
 }
-console.log("Exercise 5 Result:", greetUser("sam", "morning"))
+console.log('Exercise 5 Result:', greetUser('Sam', 'morning'))
 
 ///// Exercise 6
 const maxOfThree = (num1, num2, num3) => {
@@ -56,53 +56,53 @@ const maxOfThree = (num1, num2, num3) => {
     return num3
   }
 }
-console.log("Exercise 6 Result:", maxOfThree(5, 10, 8))
+console.log('Exercise 6 Result:', maxOfThree(5, 10, 8))
 
 ///// Exercise 7
 const calculateTip = (bill, tip) => {
   return bill * (tip / 100)
 }
-console.log("Exercise 7 Result:", calculateTip(50, 20))
+console.log('Exercise 7 Result:', calculateTip(50, 20))
 
 ///// Exercise 8
 const convertTemperature = (degrees, scale) => {
-  if (scale === "C") {
+  if (scale === 'C') {
     return degrees * (9 / 5) + 32
-  } else if (scale === "F") {
+  } else if (scale === 'F') {
     return (degrees - 32) * (5 / 9)
   }
 }
-console.log("Exercise 8 Result:", convertTemperature(32, "C"))
+console.log('Exercise 8 Result:', convertTemperature(32, 'C'))
 
 ///// Exercise 9
 const basicCalculator = (numOne, numTwo, operator) => {
-  if (operator === "add") {
+  if (operator === 'add') {
     return numOne + numTwo
-  } else if (operator === "subtract") {
+  } else if (operator === 'subtract') {
     return numOne - numTwo
-  } else if (operator === "multiply") {
+  } else if (operator === 'multiply') {
     return numOne * numTwo
-  } else if (operator === "divide") {
+  } else if (operator === 'divide') {
     return numOne / numTwo
   }
 }
-console.log("Exercise 9 Result:", basicCalculator(10, 5, "subtract"))
+console.log('Exercise 9 Result:', basicCalculator(10, 5, 'subtract'))
 
 ///// Exercise 10
 const calculateGrade = (score) => {
   if (score >= 90) {
-    return "A"
+    return 'A'
   } else if (score <= 89 && score >= 80) {
-    return "B"
+    return 'B'
   } else if (score <= 79 && score >= 70) {
-    return "C"
+    return 'C'
   } else if (score <= 69 && score >= 60) {
-    return "D"
+    return 'D'
   } else if (score < 60) {
-    return "f"
+    return 'f'
   }
 }
-console.log("Exercise 10 Result:", calculateGrade(10))
+console.log('Exercise 10 Result:', calculateGrade(85))
 
 ///// Exercise 11
 const createUsername = (firstName, secondName) => {
@@ -111,10 +111,11 @@ const createUsername = (firstName, secondName) => {
   numberOfCharacters = firstName.length + secondName.length
   return firstNameFirstThree + secondNameFirstThree + numberOfCharacters
 }
-console.log("Exercise 11 Result:", createUsername("Samantha", "Green"))
+console.log('Exercise 11 Result:', createUsername('Samantha', 'Green'))
 
 ///// Exercise 12
-const numArgs = () => {
-  return numArgs.length
+function numArgs() {
+  return arguments.length
 }
-console.log("Exercise 12 Result:", numArgs(1, 2, 3))
+
+console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4))
