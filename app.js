@@ -36,7 +36,7 @@ console.log('Exercise 3 Result:', isCharAVowel('a'))
 
 ///// Exercise 4
 const generateEmail = (aName, domain) => {
-  return aName + '@' + domain
+  return `${aName}@${domain}`
 }
 console.log('Exercise 4 Result:', generateEmail('johnsmith', 'example.com'))
 
@@ -117,5 +117,4 @@ console.log('Exercise 11 Result:', createUsername('Samantha', 'Green'))
 function numArgs() {
   return arguments.length
 }
-
 console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4))
